@@ -1691,13 +1691,11 @@ show standby brief
 show cdp neighbors
 ```
 
-#### Espacio para captura
-
-[R-OCCIDENTE](./img/evidencia-r-occidente.png)
-[R-NORTE](./img/evidencia-r-norte.png)
-[R-CENTRAL1](./img/evidencia-r-central1.png)
-[R-CENTRAL2](./img/evidencia-r-central2.png)
-[R-ORIENTE](./img/evidencia-r-oriente.png)
+![R-OCCIDENTE](./img/evidencia-r-occidente.png)
+![R-NORTE](./img/evidencia-r-norte.png)
+![R-CENTRAL1](./img/evidencia-r-central1.png)
+![R-CENTRAL2](./img/evidencia-r-central2.png)
+![R-ORIENTE](./img/evidencia-r-oriente.png)
 
 ---
 
@@ -1721,8 +1719,6 @@ show ip route
 interface FastEthernet0/1
  no shutdown
 ```
-
-#### Espacio para captura HSRP
 
 1. Antes de la falla:
 ![MS1-HSRP](./img/evidencia-ms1-hsrp.png)
@@ -1789,10 +1785,6 @@ ping <IP_DESTINO>
 tracert <IP_DESTINO>
 ```
 
-##### Espacios para captura
-
-> Insertar captura de ping exitoso Occidente -> Data Center (0% perdida o convergencia estable despues del primer eco).
-
 #### PING ENTRE MISMA VLAN
 
 1. PC-CAJAS1 (Occidente) -> PC-CAJA2 (Occidente):
@@ -1845,29 +1837,3 @@ La red implementada cumple con una arquitectura multisede donde cada ubicacion t
 La sede Oriente se diseno con redundancia de puerta de enlace mediante HSRP, permitiendo que las VLANs Boveda y Plataforma tengan una puerta de enlace virtual estable. La sede Central utiliza EtherChannel LACP entre el switch de acceso y distribucion, aumentando disponibilidad y capacidad logica del enlace. Finalmente, las rutas estaticas del datacenter se redistribuyen hacia OSPF desde R-CENTRAL1, permitiendo que el resto de sedes alcance los servidores y equipos NOC.
 
 ---
-
-## 11. Anexos de Evidencia
-
-### 11.1 Captura de topologia completa
-
-![topologia completa final](./img/topologia_completa_final.png)
-
-### 11.2 Captura de tablas de enrutamiento
-
-![tablas de enrutamiento](./img/tablas_enrutamiento.png)
-
-### 11.3 Captura de pruebas de ping
-
-![pruebas de ping](./img/pruebas_ping.png)
-
-### 11.4 Captura de HSRP
-
-![hsrp](./img/hsrp.png)
-
-### 11.5 Captura de EtherChannel
-
-![etherchannel](./img/etherchannel.png)
-
-### 11.6 Captura de STP
-
-![stp](./img/stp.png)
