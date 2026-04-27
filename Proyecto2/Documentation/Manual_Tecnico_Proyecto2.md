@@ -77,9 +77,7 @@ La red se divide en un **Backbone Core** y cuatro sedes conectadas al núcleo na
 | Oriente | 192.168.74.0/24 | HSRP + Trunks + RIPv2 | Alta disponibilidad para Boveda y Plataforma |
 | Central - Datacenter | 192.168.75.0/24 | EtherChannel + Router-on-a-stick + rutas estaticas + OSPF | Servicios internos y NOC |
 
-### 3.2 Espacio para topologia completa
-
-Pegar aqui la captura final de Packet Tracer con todas las sedes conectadas:
+### 3.2 Topologia Completa
 
 ![Topologia completa](./img/topologia.png)
 
